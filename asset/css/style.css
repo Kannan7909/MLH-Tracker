@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn{
+    color: #283b6a !important;
+    border-color:#283b6a !important;
+}
+
+.active{
+    font-weight: bold;
+    color: #fff !important;
+}
+
+.btn:hover{
+    color: #fff !important;
+    background-color: #283b6a;
+}
+
+.require-star{
+    color: red;
+}
+
+/* navbar styling */
+.navbar{
+    background-color: #041e41 !important;
+}
+
+.navbar-toggler{
+    border-color: #fff;
+    background-color: #fff;
+}
+
+.nav-link{
+    color: #fff !important;
+    margin: 10px;
+}
+
+.nav-link:hover{
+    font-weight: bold;
+    color: #fff;
+}
+
+/* footer styling */
+.footer{
+    width: 100%;
+    background-color: #041e41;
+    color: #fff;
+}
+
+.foot-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.footer .container-fluid .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.social-icon{
+    font-size: 30px;
+    margin: 0 20px 0 0;
+}
+
+/* Home page css */
+.banner {
+    background: black;
+    overflow: hidden;
+    color: #fff;
+    width: 100%;
+    position: relative;
+  }
+
+.banner-img{
+    height: 470px; 
+    width: 100%
+}
+
+.banner-sub-head{
+    font-size: 25px;
+}
+
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 35%;
+    width: 80%;
+    left: 10%;
+  }
+
+  .banner img{
+    object-fit: cover;
+    opacity: 0.4;
+  }
+
+  p{
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .home-section-1{
+    color: #283b6a;
+  }
+
+  .spacer{
+    margin: 80px;
+  }
+
+  .home-section-2{
+    background-color: #283b6a;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .mob-view{
+    display: none;
+  }
+
+  @media(max-width: 768px){
+    .desk-view{
+        display: none;
+    }
+    .mob-view{
+        display: block;
+    }
+  }
+  .sec-col{
+    background-color: #fff;
+    color: #283b6a;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.sec-col h2{
+    margin-bottom: 20px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-section-3{
+    margin: 20px;
+    color: #283b6a;
+}
+
+.img{
+    border-radius: 20px;
+}
+
+.about-section-1{
+    color: #283b6a;
+}
+
+.about-section-2{
+    border: 3px solid #283b6a;
+    border-radius: 30px;
+    font-weight: bold;
+    margin: 20px;
+    padding: 20px;
+    color: #283b6a;
+}
+
+.about-section-3{
+    color: #283b6a;
+    padding: 30px;
+    margin: 20PX;
+}
+
+.about-section-4{
+    border: 3PX solid #283b6a;
+    border-radius: 10px;
+    color: #283b6a;
+    padding: 10px;
+    margin: 10px;
+}
+
+.subscribe-section-1{
+    margin: 20px;
+    background-color: #283b6a;
+    border-radius: 20px;
+    padding: 30px;
+    color: #fff;
+}
+
+.subscribe-section-1 .btn{
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+.reg-form{
+    background-color: #fff;
+    color: #283b6a;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.subscribe-section-2{
+    color: #283b6a;
+}
+
+.subscribe-section-2 .col-sm-4{
+    padding: 30px;
+}
+
+.subscribe-section-3{
+    border: 1px solid #283b6a;
+    border-radius: 10px;
+    background-color: #283b6a;
+    color: #fff;
+    padding: 20px;
+}
+
+.basic .price-tag{
+    background: #03caa7;
+}
+
+.basic{
+    transition: transform .2s;
+}
+
+.basic:hover{
+    transform: scale(1.1);
+}
+
+.premium{
+    transition: transform .2s;
+}
+
+.premium:hover{
+    transform: scale(1.1);
+}
+
+.standard{
+    transition: transform .2s;
+}
+
+.standard:hover{
+    transform: scale(1.1);
+}
+
+.price-tag {
+    padding: 30px;
+    color: white;
+    border-radius: 10px;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+.basic svg path {
+    fill: #03caa7;
+}
+
+svg rect {
+    fill:#fff;
+}
+
+.wave {
+    --divider-height:4rem;
+    position: relative;
+    top: calc( var(--divider-height)/2 * -1 );
+    height: var(--divider-height);
+    width: 100%;
+    float: left;
+    z-index: 1;
+}
+
+.price-tag h2{
+    font-size: 100px;
+}
+
+.price-tag .month-p{
+    font-size: 50px;
+}
+
+.benefits{
+    background-color: #fff;
+    color: #03caa7;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.benefits ul{
+    list-style: none;
+}
+
+
+.premium svg path {
+    fill: #ffba39;
+}
+
+.premium .price-tag{
+    background: #ffba39;
+}
+
+.standard svg path {
+    fill: #fd626a;
+}
+
+.standard .price-tag{
+    background: #fd626a;
+}
+
+.contact-section-1{
+    background-image: url("../images/contact.jpg");
+    border-radius: 20px;   
+}
+
+.overlay{
+    background-color: #00000054;
+    border-radius: 20px;
+    color: #fff;;
+}
+
+.contact-form{
+    background-color: #fff;
+    color: #283b6a;
+    padding: 20px;
+    margin: 10px 20px;
+    border-radius: 20px;
+}
+
+.reg-form .btn{
+    background-color: #fff;
+    border-color: grey !important;
+    color: #283b6a !important;
+}
+
+
+.contact-form .btn{
+    margin-top: 20px;
+    background-color: #fff;
+    border-color: grey !important;
+    color: #283b6a !important;
+}
+
+.payment-section-1{
+    margin: 20px 20px 80px 20px;
+    padding: 20px 100px;
+}
+
+.receipt{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #283b6a;
+    color: #fff;
+    padding: 30px;
+}
+
+.payment-form{
+    padding: 28px;
+    border: 1px solid #283b6a;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #283b6a;
+}
+
+.pay-icon{
+    font-size: 30px;
+    color: #283b6a;
+}
+
+.paypalPayment-form{
+    padding: 55px;
+}
+
+.sec-col{
+    height: 280px;
+}
+
+.updates{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.updates-content{
+    border: 1px solid black; 
+    padding: 10px; 
+    border-radius:10px; 
+    margin:10px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    transition: transform .2s;
+}
+
+.updates-content:hover{
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-img{
+        height: 180px; 
+        width: 100%
+    }
+    
+    .banner-sub-head{
+        font-size: 15px;
+    }
+
+    .banner-head{
+        font-size: 20px;
+    }
+
+    .centered{
+        top: 10% !important;
+    }
+
+    .foot-col{
+        align-items: start;
+    }
+}
