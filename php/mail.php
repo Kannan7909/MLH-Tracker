@@ -14,15 +14,15 @@ try {
     //Server settings
     $mail->SMTPDebug = 0;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+    $mail->Host       = 'mail.mlhtracker.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'excellentdemo35@gmail.com';                     //SMTP username
-    $mail->Password   = 'efvhoqjojppepsae';                               //SMTP password
+    $mail->Username   = 'admin@mlhtracker.com';                     //SMTP username
+    $mail->Password   = 'WR}8Cg#P}ijz';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('hr@jobplusquickhcm360.com', 'UK Finance');
+    $mail->setFrom('admin@mlhtracker.com', 'MLH Tracker');
     $mail->addAddress('kannanaa21@gmail.com');              
 
     //Content

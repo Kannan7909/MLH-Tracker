@@ -86,15 +86,15 @@ class user extends DatabaseConnection{
             //Server settings
             $this->mail->SMTPDebug = 0;                      //Enable verbose debug output
             $this->mail->isSMTP();                                            //Send using SMTP
-            $this->mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+            $this->mail->Host       = 'mail.mlhtracker.com';                     //Set the SMTP server to send through
             $this->mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            $this->mail->Username   = 'excellentdemo35@gmail.com';                     //SMTP username
-            $this->mail->Password   = 'efvhoqjojppepsae';                               //SMTP password
+            $this->mail->Username   = 'admin@mlhtracker.com';                     //SMTP username
+            $this->mail->Password   = 'WR}8Cg#P}ijz';                               //SMTP password
             $this->mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
             $this->mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
         
             //Recipients
-            $this->mail->setFrom('excellentdemo35@gmail.com', 'MLH Tracker');
+            $this->mail->setFrom('admin@mlhtracker.com', 'MLH Tracker');
             $this->mail->addAddress($emailId);              
         
             //Content
