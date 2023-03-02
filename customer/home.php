@@ -42,7 +42,7 @@ if($customerDetails == ''){
                                 <input type="text" class="form-control" value="<?php echo $customerDetails['email'];?>" readonly>
                                 <?php
                                 if($customerDetails['emailValidation']!=1){
-                                    echo "<p style='color: red; font-size:15px'>Please validate your email id <a href='../php/emailValidation.php?id=$customerDetails[customerId]'>click this link</a></p>";
+                                    echo "<p onclick='sendMailAndPageLoad($customerDetails[customerId])' style='color: red; font-size:15px'>Please validate your email id <a href='../php/sendMail.php?id=$customerDetails[customerId]'>click this link</a></p>";
                                 }
                                 ?>
                             </div>
@@ -125,6 +125,7 @@ if($customerDetails == ''){
 			document.getElementById(tabName).style.display = "block";
 			evt.currentTarget.className += " active";
 		}
+
 	</script>
 </body>
 </html>

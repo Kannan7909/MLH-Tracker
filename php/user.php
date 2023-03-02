@@ -89,7 +89,7 @@ class user extends DatabaseConnection{
             $this->mail->Host       = 'mail.mlhtracker.com';                     //Set the SMTP server to send through
             $this->mail->SMTPAuth   = true;                                   //Enable SMTP authentication
             $this->mail->Username   = 'admin@mlhtracker.com';                     //SMTP username
-            $this->mail->Password   = 'WR}8Cg#P}ijz';                               //SMTP password
+            $this->mail->Password   = 'u+YDrM9U5^K{';                               //SMTP password
             $this->mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
             $this->mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
         
@@ -114,7 +114,7 @@ class user extends DatabaseConnection{
     public function getUser($customerId){
         $sql = "SET SESSION group_concat_max_len = 1000000";
         $result = mysqli_query($this->conn, $sql);
-        $sql = "SELECT customers.customerId, firstName, lastName, email, phone, address, company, emailValidation, status, date, GROUP_CONCAT(DISTINCT regions.region ORDER BY regions.regionId ASC) as regions, GROUP_CONCAT(lenders.lender ORDER BY lenders.lenderId ASC) as lenders
+        $sql = "SELECT customers.customerId, firstName, lastName, email, phone, address, company, otp, emailValidation, status, date, GROUP_CONCAT(DISTINCT regions.region ORDER BY regions.regionId ASC) as regions, GROUP_CONCAT(lenders.lender ORDER BY lenders.lenderId ASC) as lenders
         FROM customers
         LEFT OUTER JOIN lender_child ON lender_child.customerId = customers.customerId
         LEFT OUTER JOIN regions ON lender_child.regionId = regions.regionId

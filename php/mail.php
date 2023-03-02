@@ -17,7 +17,7 @@ try {
     $mail->Host       = 'mail.mlhtracker.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'admin@mlhtracker.com';                     //SMTP username
-    $mail->Password   = 'WR}8Cg#P}ijz';                               //SMTP password
+    $mail->Password   = 'u+YDrM9U5^K{';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
