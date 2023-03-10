@@ -69,7 +69,10 @@ else{
 								<a class="nav-link" id="login" href="login.php">Login</a>
 				  			</li>';
 					}
-					?>        			        		
+					?>  
+					<li class="nav-item">
+						<a class="nav-link" target="_blank" id="logout" href="MLH_TRACKER.pdf">User Guide</a>
+				  	</li>      			        		
       			</ul>
     		</div>
   		</div>
