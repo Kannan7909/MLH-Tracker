@@ -16,7 +16,7 @@
                         <li><a href="index.php" style="color: #fff; text-decoration:none">Home</a></li>
                         <li><a href="about.php" style="color: #fff; text-decoration:none">About Us</a></li>
                         <li><a href="subscribe.php" style="color: #fff; text-decoration:none">Subscribe</a></li>
-                        <li><a href="pricing.php" style="color: #fff; text-decoration:none">Pricing</a></li>
+                        <!-- <li><a href="pricing.php" style="color: #fff; text-decoration:none">Pricing</a></li> -->
                         <li><a href="contact.php" style="color: #fff; text-decoration:none">Contact Us</a></li>
                         <li><a target="_blank" href="MLH_TRACKER.pdf" style="color: #fff; text-decoration:none">User Guide</a></li>
                     </ul>
