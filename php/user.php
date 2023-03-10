@@ -74,8 +74,8 @@ class user extends DatabaseConnection{
 
     public function getLender($regionId){
         $sql = "SELECT * FROM lenders 
-        WHERE `regionId` IN (SELECT `regionId` FROM lenders  GROUP BY `regionId` HAVING COUNT(`regionId`) > 2)
-        AND regionId IN ($regionId);";
+        WHERE `regionId` IN (SELECT `regionId` FROM lenders  GROUP BY `regionId` HAVING COUNT(`regionId`) > 0)
+        AND regionId IN ($regionId)";
         $result = mysqli_query($this->conn, $sql);
         $row = mysqli_fetch_all($result, MYSQLI_ASSOC);  
         return $row;
